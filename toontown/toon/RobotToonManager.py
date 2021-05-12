@@ -1177,7 +1177,7 @@ class RobotToonManager(DirectObject):
 class RobotToonControlPanel(AppShell):
     # Override class variables
     appname = 'Robot Toon Manager Panel'
-    frameWidth  = 650
+    frameWidth  = 750
     frameHeight = 600
     usecommandarea = 1
     usestatusarea  = 0
@@ -1539,9 +1539,9 @@ class RobotToonControlPanel(AppShell):
         colorFrame = Frame(self.pageOne)
         for i in range(2):
             cf = Frame(colorFrame)
-            for j in range(14):
-                index = i * 14 + j
-                if index < 27:
+            for j in range(33):
+                index = i * 33 + j
+                if index < 65:
                     color = self.transformRGB(ToonDNA.allColorsList[index])
                     b = Button(cf, width = 1, height = 1, background = color,
                            text = "%d" % index,
